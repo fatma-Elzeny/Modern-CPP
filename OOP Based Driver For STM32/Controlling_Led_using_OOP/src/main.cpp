@@ -1,8 +1,9 @@
 #include "../include/GPIOLED.hpp"
 
+
 #define GPIOB_BASE  0x40020400  // GPIOB base address
 
-GpioLed led(GPIOB_BASE, 0);  // LED connected to PB0
+Led led(GPIOB_BASE, 0);  // LED on PB0
 
 int main() {
     while (1) {
